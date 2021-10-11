@@ -1,0 +1,42 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "KFC Restaurant",
+      "address": "Mumbai",
+      "email": "kfc@test.com"
+    },
+    {
+      "id": 2,
+      "name": "Burgerking Restaurant",
+      "address": "Pune",
+      "email": "bergerking@test.com"
+    },
+    {
+      "name": "BurgerKing",
+      "address": "Kolkata",
+      "email": "burgerking@test.com",
+      "id": 3
+    },
+    {
+      "name": "Natural Food",
+      "address": "Chennai",
+      "email": "natural@test.com",
+      "id": 4
+    },
+    {
+      "name": "Street Food`",
+      "address": "Rajasthan",
+      "email": "street@food.com",
+      "id": 5
+    },
+    {
+      "name": "Sevan Velas",
+      "address": "Mumbai",
+      "email": "seven@velas.com",
+      "id": 6,
+      "date":"15/04/1998"
+    }
+    
+  ]
+}

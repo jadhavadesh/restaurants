@@ -5,8 +5,13 @@ import {ListRestoComponent} from './list-resto/list-resto.component';
 import {UpdateRestoComponent} from './update-resto/update-resto.component';
 import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
+import {HomeComponent} from './home/home.component';
 
 const routes: Routes = [
+  {
+    path:'home',
+    component:HomeComponent
+  },
   {
     path:'add',
     component:AddRestoComponent
@@ -16,16 +21,16 @@ const routes: Routes = [
     component:UpdateRestoComponent
   },
   {
-    path:'list',
-    component:ListRestoComponent
-  },
-  {
     path:'login',
     component:LoginComponent
   },
   {
     path:'register',
     component:RegisterComponent
+  },
+  {
+    path:'',
+    component:ListRestoComponent
   }
 ];
 

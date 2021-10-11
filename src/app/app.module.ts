@@ -10,6 +10,7 @@ import { RegisterComponent } from './register/register.component';
 import { ListRestoComponent } from './list-resto/list-resto.component';
 import { HttpClientModule} from '@angular/common/http';
 import {ReactiveFormsModule} from '@angular/forms';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import {ReactiveFormsModule} from '@angular/forms';
     UpdateRestoComponent,
     LoginComponent,
     RegisterComponent,
-    ListRestoComponent
+    ListRestoComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
