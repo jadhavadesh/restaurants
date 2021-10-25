@@ -1,1 +1,27 @@
-<h1>login works!</h1>
+<div class="container">
+  <h1 class="text-center">{{loginMode? 'Sign In' : 'Sign Up'}}</h1>
+  
+  <form class="form-group m-4" [formGroup]="form">
+      <div class="form-group mb-3 input-box">
+        <i class="fas fa-envelope"></i>
+        <input type="email"  #u1 aria-describedby="emailHelp" placeholder="Enter email" formControlName="email">
+        <!-- <small    class="form-text text-danger">Please Enter Valid Email</small> -->
+      </div>
+      <div class="form-group mb-3 input-box">
+        <i class="fas fa-key"></i>
+        <input type="password"  #p2 placeholder="Password"  formControlName="password">
+        <!-- <small id="emailHelp" class="form-text text-danger">Please Enter Password</small> -->
+      </div>
+      <br>
+      <div class="form-group mb-3 mt-0 input-btn">
+      <!-- <button (click)="check(u1.value, p2.value)" type="submit" class="btn btn-primary">Sign In</button> -->
+      <button (click)="signin()" type="submit" class="btn btn-primary" [disabled]="form.invalid">Sign In</button>
+      <br>
+      <span>{{ msg }}</span>
+      </div>
+       <div class="mb-3 input-btn">
+      <p class="mb-0 ">Don`t have account <a routerLink="signup" >Create One</a></p>
+      
+      </div>
+    </form>
+    </div>

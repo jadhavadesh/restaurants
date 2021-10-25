@@ -1,10 +1,10 @@
 {
   "restaurants": [
     {
-      "id": 1,
       "name": "KFC Restaurant",
       "address": "Mumbai",
-      "email": "kfc@test.com"
+      "email": "kfc@test.com",
+      "id": 1
     },
     {
       "id": 2,
@@ -20,23 +20,9 @@
     },
     {
       "name": "Natural Food",
-      "address": "Chennai",
+      "address": "Kashmir",
       "email": "natural@test.com",
       "id": 4
-    },
-    {
-      "name": "Street Food`",
-      "address": "Rajasthan",
-      "email": "street@food.com",
-      "id": 5
-    },
-    {
-      "name": "Sevan Velas",
-      "address": "Mumbai",
-      "email": "seven@velas.com",
-      "id": 6,
-      "date":"15/04/1998"
     }
-    
   ]
 }

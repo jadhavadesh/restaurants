@@ -7,10 +7,44 @@
 }
 footer {
     padding: 16px;
-    background-color: grey;
-    position: absolute;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
     left: 0;
-    bottom: 0;
+    bottom: 1;
     width: 100%;
     margin: 0;
+    color: white;
 }
+
+
+.chat_icon{
+    position: fixed;
+    right: 30px;
+    bottom: 52px;
+    font-size: 80px;
+    color: rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+    z-index: 1000;
+}
+.chat_box{
+    position: fixed;
+    right: 20px;
+    bottom: 150px;
+    width: 400px;
+    height: 75vh;
+    background: #dedede;
+    z-index: 1000%;
+    transition: all 0.3s ease-out;
+    transform: scaleY(0);
+}
+.chat_box.active{
+    transform: scaleY(1);
+}
+
+/* .btn-primary{
+    margin-left: 200vh;
+} */
+
+ .btn-logout{
+    margin-left: 135vh;
+} 

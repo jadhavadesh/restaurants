@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { MyserviceService} from '../myservice.service';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor( private myservice:MyserviceService, private router:Router) { }
 
   ngOnInit(): void {
   }
-
+//   clearLocal(){
+// this.myservice.deleteLocal();
+// this.router.navigate(['']);
+//   }
 }

@@ -1,25 +1,44 @@
-
-<nav class="navbar navbar-expand-lg navbar-light bg-dark">
-  <a class="navbar-brand text-white" routerLink="">RESTAURANTS APP</a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+<nav class="navbar navbar-expand-lg navbar-light bg-dark" *ngIf="authservice.isAuthenticated">
+  <a class="navbar-brand text-white" routerLink="list">RESTAURANTS APP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
     <div class="navbar-nav">
       <a class="nav-item nav-link active text-white" routerLink="add">Add Restaurant</a>
       <!-- <a class="nav-item nav-link active text-white" routerLink="update" >Update Restaurant</a> -->
-      <a class="nav-item nav-link active text-white" routerLink="">Restaurant List</a>
-      <a class="nav-item nav-link active text-white" routerLink="login">Login User</a>
-      <a class="nav-item nav-link active text-white" routerLink="register">Register User</a>
+      <a class="nav-item nav-link active text-white" routerLink="list">Restaurant List</a>
+      <!-- <a class="nav-item nav-link active text-white text-right" id="login" routerLink="">Login User</a> -->
+      <button type="submit" class="btn btn-primary btn-logout" id="logout" (click)="signout()">Logout</button>
+
+        
+      
+
+
     </div>
   </div>
 </nav>
 
+
+
+
+
+
+<div class="chat_icon">
+<i class="fa fa-comments" ></i>
+</div>
+
+<div class="chat_box" ></div>
+
+
+
+
+
 <div class="container">
   <router-outlet></router-outlet>
-  <footer >
+
+  <footer style="bottom: 0px;">
     <p>@2020 Copyright by Adesh Jadhav</p>
   </footer>
 </div>
-
-

@@ -1,9 +1,11 @@
 import { Injectable } from '@angular/core';
 import {HttpClient} from '@angular/common/http';
+import { config } from './config';
 @Injectable({
   providedIn: 'root'
 })
 export class RestoService {
+  api = config.API_URL;
 url="http://localhost:3000/restaurants";
 rootUrl="http://localhost:3000/";
   constructor(private http:HttpClient) { }
@@ -26,8 +28,8 @@ rootUrl="http://localhost:3000/";
   {
     return this.http.put(`${this.url}/${id}`,data)
   }
-  registerUser(data:any)
-  {
-    return this.http.post(this.rootUrl+"users", data)
-  }
+  // registerUser(data:any)
+  // {
+  //   return this.http.post(this.rootUrl+"users", data)
+  // }
 }

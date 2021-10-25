@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
 import {ActivatedRoute} from '@angular/router';
+import { RouterModule, Router} from '@angular/router';
 import {RestoService} from '../resto.service';
 
 @Component({
@@ -15,7 +16,7 @@ export class UpdateRestoComponent implements OnInit {
     address: new FormControl(''),
     email: new FormControl('')
   })
-  constructor(private router:ActivatedRoute, private resto:RestoService) { }
+  constructor(private router:ActivatedRoute, private resto:RestoService, private routes:Router) { }
 
   ngOnInit(): void {
     console.warn(this.router.snapshot.params.id)
@@ -33,6 +34,7 @@ collection()
   this.resto.updateResto(this.router.snapshot.params.id,this.editResto.value).subscribe((result)=>{
     this.alert=true;
     this.editResto.reset();
+    this.routes.navigate(['/list']);
   })
 }
 closeAlert()

@@ -1,0 +1,21 @@
+{
+  "targets": {
+    "restaurants-demo-1": {
+      "hosting": {
+        "restaurants": [
+          "restaurants-demo-1"
+        ]
+      }
+    },
+    "restaurants-11": {
+      "hosting": {
+        "restaurants": [
+          "restaurants-11"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "restaurants-11"
+  }
+}
