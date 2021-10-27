@@ -11,7 +11,9 @@ import {MatSelectModule} from '@angular/material/select';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatCardModule} from '@angular/material/card';
 import {MatDatepickerModule} from '@angular/material/datepicker';
-import {CoreModule} from './core/core.module'
+import {CoreModule} from './core/core.module';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+
 
 
 
@@ -46,6 +48,7 @@ import { provideMessaging,getMessaging } from '@angular/fire/messaging';
 import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
+import { KfcRestoInfoComponent } from './kfc-resto-info/kfc-resto-info.component';
 
 
 
@@ -61,7 +64,8 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     ChatBoxComponent,
     LogoutComponent,
     MatConfirmDailogComponent,
-    SignupComponent
+    SignupComponent,
+    KfcRestoInfoComponent
   ],
   imports: [
     BrowserModule,
@@ -80,6 +84,7 @@ import { provideStorage,getStorage } from '@angular/fire/storage';
     MatCardModule,
     MatDatepickerModule,
     CoreModule,
+    CarouselModule,
    
     
     MatSelectModule,

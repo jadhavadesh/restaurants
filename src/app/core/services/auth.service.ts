@@ -21,7 +21,7 @@ export class AuthService {
           }
           sessionStorage.setItem('userData',JSON.stringify(userObj));
           ngzone.run(()=>{
-            this.router.navigate(['/list']);
+            this.router.navigate(['']);
           });
        })
        
@@ -42,6 +42,7 @@ export class AuthService {
       onSuccess();
       console.log("Login Success");
       this.isAuthenticated = true;
+      this.router.navigate(['/list']);
       // result.user?.getIdToken().then(idToken=>{
       //   console.log(idToken);
       // })

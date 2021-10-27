@@ -16,15 +16,15 @@ export class MatConfirmDailogComponent implements OnInit {
     // throw new Error('Method not implemented.');
     
   }
-  deleteResto(item:any){
-    this.collection.splice(item-1)
-    this.resto.deleteResto(item).subscribe((result)=>{
-      console.warn("result", result)
-    })
-  }
+  // deleteResto(item:any){
+  //   this.collection.splice(item-1)
+  //   this.resto.deleteResto(item).subscribe((result)=>{
+  //     console.warn("result", result)
+  //   })
+  // }
   
   onNoClick(): void {
-    this.dialogRef.close();
+    this.dialogRef.close(false);
   }
 
   

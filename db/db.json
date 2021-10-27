@@ -1,9 +1,9 @@
 {
   "restaurants": [
     {
-      "name": "KFC Restaurant",
+      "name": "Love Bites",
       "address": "Mumbai",
-      "email": "kfc@test.com",
+      "email": "love@test.com",
       "id": 1
     },
     {
@@ -14,14 +14,14 @@
     },
     {
       "name": "BurgerKing",
-      "address": "Kolkata",
+      "address": "Noida",
       "email": "burgerking@test.com",
       "id": 3
     },
     {
-      "name": "Natural Food",
-      "address": "Kashmir",
-      "email": "natural@test.com",
+      "name": "MCD",
+      "address": "Kolkata",
+      "email": "mcd@test.com",
       "id": 4
     }
   ]

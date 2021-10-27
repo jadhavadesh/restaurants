@@ -5,6 +5,7 @@ import {ListRestoComponent} from './list-resto/list-resto.component';
 import {UpdateRestoComponent} from './update-resto/update-resto.component';
 import {LoginComponent} from './login/login.component';
 import {SignupComponent} from './signup/signup.component'
+import {KfcRestoInfoComponent} from './kfc-resto-info/kfc-resto-info.component'
 import {AuthGuard} from './auth.guard'
 
 import {HomeComponent} from './home/home.component';
@@ -29,7 +30,10 @@ const routes: Routes = [
     path:'update/:id',
     component:UpdateRestoComponent
   },
-
+  {
+    path:'kfc/:id',
+    component:KfcRestoInfoComponent
+  },
   
   {
     path:'list', 

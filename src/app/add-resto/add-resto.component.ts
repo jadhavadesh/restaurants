@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {FormGroup, FormControl} from '@angular/forms';
 import { RestoService} from '../resto.service';
+import { RouterModule, Router} from '@angular/router';
 @Component({
   selector: 'app-add-resto',
   templateUrl: './add-resto.component.html',
@@ -14,7 +15,7 @@ alert:boolean=false;
     email: new FormControl('')
   })
 
-  constructor(private resto:RestoService) { }
+  constructor(private resto:RestoService, private routes: Router) { }
 
   ngOnInit(): void {
   }
@@ -23,6 +24,7 @@ alert:boolean=false;
     return this.resto.saveResto(this.addResto.value).subscribe((result)=>{
       this.alert=true;
       this.addResto.reset({});
+      this.routes.navigate(['/list']);
     })
     
   }
